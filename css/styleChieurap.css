@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*CSS HEADER*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+/*css all*/
+div.all{
+    width: 100%;
+    display:block;
+    min-width: 1000px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #202025 !important;
+}
+/*CSS NAV - Menu */
+nav{
+    background-image: linear-gradient(rgb(46, 44, 44), rgb(97, 89, 89));
+    margin-bottom: 8px; /*Mới Thêm*/
+}
+ul.menu{
+    list-style-type: none;
+    border: 1px solid orange;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+}
+/*MỚI THÊM*/
+ul.menu>li{
+    min-width: 150px;
+    text-align: center;
+}
+ul.menu>li>a{
+    text-decoration: none;
+    display: block;
+    color: orange;
+    display: block;
+    padding: 15px 20px;
+}
+/* Thay đổi màu liên kết khi di chuột */
+ul.menu>li>a:hover{
+    background-image: linear-gradient( rgb(97, 89, 89), rgb(46, 44, 44));
+    color: orange;
+    font-weight: bold;
+}
+/* Lựa Chọn Quốc Gia */
+.sub{
+    display: none !important;
+    /* color: orange;
+    list-style-type: square;
+    text-align: left; */
+    position: absolute; /*Mới Thêm*/
+    background-color: black;
+    z-index: 3;
+}
+li>a{
+    color: yellow;
+}
+.sub-nav:hover .sub{
+    display: block !important;
+}
+/*SECTION*/
+h1.subject {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: orange;
+    border-radius: 0px 10px 0px 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    background-image: linear-gradient(to bottom left,#cc9900, #f7d482);
+}
+div.list-box{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid orangered;
+}
+.picture{
+    float: left;
+}
+div.picture>img{
+    object-fit: cover;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+
+}
+div.infor{
+    float: left;
+    padding: 30px;
+}
+.name>h2{
+    margin: 0px;
+    font-size: 30px;
+    color: yellow !important;
+}
+span{
+    color: white;
+    font-size: 15px;
+}
+
+/*GO TO TOP*/
+.gotoTop{
+    width: 50px;
+    height: 50px;
+    background: rgb(240,249,0,0.7);
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+div.gotoTop i{
+    position: relative;
+    top: 15px;
+    left: 17px;
+}
+
+/**/
+/* The Modal (background) */
+.modal,.modal1,.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#myBtn, #myBtn1, #myBtn2{
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 6px 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(247, 111, 134), red)
+}
+#myBtn,#myBtn1,#myBtn2:hover{
+    background-image: linear-gradient(red, rgb(247, 111, 134))
+}
+/* Modal Content */
+.modal-content, .modal-content1, .modal-content2 {
+    width: 80% !important;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+
+}
+
+/* The Close Button */
+.close,.close1,.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close,.close1,.close2:hover,
+.close,.close1,.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content>iframe{
+    margin: auto;
+    display: block;
+}
+.modal-content1>iframe{
+    margin: auto;
+    display: block;
+}
+.modal-content2>iframe{
+    margin: auto;
+    display: block;
+}
+/*NEXT*/
+.next{
+    display: block;
+    margin-top: 5px !important;
+    width: 100px;
+    height: 35px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: rgb(214, 165, 74);
+}
+.nnet{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.next>a{
+    text-decoration: none !important;
+}
+/*CSS FOOTER*/
+footer{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid orange;
+}
+.out{
+    display: flex;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding:20px;
+}
+div.left{
+    width:25%;
+    float: left;
+}
+.left>img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+div.right{
+    float: left;
+    width:20%;
+
+}
+div.middle{
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    padding: 10px;
+}
+div.text>h1{
+    font-size: 16px;
+}
+div.icon{
+    display: flex;
+    margin-top: 20px;
+}
+.fa-facebook,.fa-instagram,.fa-twitter{
+    margin-right: 20px;
+}

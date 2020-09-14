@@ -1,0 +1,188 @@
+
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*CSS HEADER*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+/*css all*/
+div.all{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    display:block;
+    min-width: 1000px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #202025 !important;
+}
+/*CSS NAV - Menu */
+nav{
+    background-image: linear-gradient(rgb(46, 44, 44), rgb(97, 89, 89));
+    margin-bottom: 8px; /*Mới Thêm*/
+}
+ul.menu{
+    list-style-type: none;
+    border: 1px solid orange;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+}
+/*MỚI THÊM*/
+ul.menu>li{
+    min-width: 150px;
+    text-align: center;
+}
+ul.menu>li>a{
+    text-decoration: none;
+    display: block;
+    color: orange;
+    display: block;
+    padding: 15px 20px;
+}
+/* Thay đổi màu liên kết khi di chuột */
+ul.menu>li>a:hover{
+    background-image: linear-gradient( rgb(97, 89, 89), rgb(46, 44, 44));
+    color: orange;
+    font-weight: bold;
+}
+/* Lựa Chọn Quốc Gia */
+.sub{
+    display: none !important;
+    /* color: orange;
+    list-style-type: square;
+    text-align: left; */
+    position: absolute; /*Mới Thêm*/
+    background-color: black;
+    z-index: 3;
+}
+li>a{
+    color: yellow;
+}
+.sub-nav:hover .sub{
+    display: block !important;
+}
+/* CSS SECTION*/
+h1.subject {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: orange;
+    border-radius: 0px 10px 0px 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    background-image: linear-gradient(to bottom left,#cc9900, #f7d482);
+}
+div.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+div.list {
+    text-align: center;
+    padding: 5px;
+    margin: 1%;
+    position: relative;
+    max-width: 800px;
+}
+div.list img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px 10px 10px 10px;
+    width:220px;
+    height:300px;
+    object-fit:cover;
+    transition: transform ease-in-out 1s;
+}
+div.list>a>img:hover{
+    box-shadow: 3px 3px 10px -2px wheat;
+}
+div.list:hover{
+    transform: scale(1.05, 1.05);
+}
+div.info {
+    height: 70px;
+    max-width: 200px;
+    max-height: 100px;;
+    padding: 10px;
+    color: orange;
+}
+div.info > h3{
+    font-size: 15px;
+}
+.list>a{
+    text-decoration: none;
+}
+/*CSS FOOTER*/
+footer{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid orange;
+}
+.out{
+    display: flex;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding:20px;
+}
+div.left{
+    width:25%;
+    float: left;
+}
+.left>img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+div.right{
+    float: left;
+    width:20%;
+
+}
+div.middle{
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    padding: 10px;
+}
+div.text>h1{
+    font-size: 16px;
+}
+div.icon{
+    display: flex;
+    margin-top: 20px;
+}
+.fa-facebook,.fa-instagram,.fa-twitter{
+    margin-right: 20px;
+}
+/*GO TO TOP*/
+.gotoTop{
+    width: 50px;
+    height: 50px;
+    background: rgb(240,249,0,0.7);
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+div.gotoTop i{
+    position: relative;
+    top: 15px;
+    left: 17px;
+}
